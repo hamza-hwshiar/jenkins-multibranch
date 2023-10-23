@@ -1,5 +1,3 @@
-#!/usr/bin/env groovy
-
 pipeline {
     agent none
     stages {
@@ -15,7 +13,7 @@ pipeline {
             when {
                expression {
                    BRANCH_NAME == "master"
-              }
+                }
             }
         }
        
